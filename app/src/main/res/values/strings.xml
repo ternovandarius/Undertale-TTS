@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">UndertaleTTS</string>
+    <string-array name="spinner">
+        <item>Sans</item>
+        <item>Papyrus</item>
+        <item>Asgore</item>
+        <item>Flowey</item>
+        <item>Undyne</item>
+        <item>Toriel</item>
+        <item>Alphys</item>
+        <item>Asriel</item>
+        <item>Generic 1</item>
+        <item>Generic 2</item>
+        <item>Ralsei</item>
+        <item>Susie</item>
+        <item>Jevil</item>
+        <item>Noelle</item>
+    </string-array>
+</resources>
