@@ -12,23 +12,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+
 
 public class MainActivity extends AppCompatActivity {
 
-    /*
-    TODO
-    For 1.0:
-    -ads
-    For 1.1:
-    -replace with asynctask(?) so that button is locked until playback ends
-    -add mettaton
-    -add gaster
-    -remake alternate sounds
-    -add speed
-     */
 
     SoundPool mySoundPool;
     int soundSans, soundPapyrus, soundAsgore, soundFlowey, soundUndyne, soundToriel, soundAlphys,
@@ -40,11 +27,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        MobileAds.initialize(this, new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(InitializationStatus initializationStatus) {
-            }
-        });
 
         if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP){
             AudioAttributes audioAttributes = new AudioAttributes.Builder()
@@ -403,6 +385,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
     }
+
 
     @Override
     protected void onDestroy(){
